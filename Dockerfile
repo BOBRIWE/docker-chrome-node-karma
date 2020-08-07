@@ -1,4 +1,6 @@
-FROM markadams/chromium-xvfb
+FROM selenium/standalone-chrome:4.0.0-alpha-6-20200730
+
+USER root
 
 # INSTALL NODE
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
